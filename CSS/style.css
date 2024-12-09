@@ -1,0 +1,318 @@
+h1 {
+    position:relative;
+    top: 45px;
+    left: 450px;
+    font-family: verdana;
+    padding: 10;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;    
+}
+
+body{
+    background-color: rgb(198, 137, 255);
+}
+
+#homehead {
+    position: relative;
+    top: 30px;
+    background-color: rgb(34, 34, 34);
+    color:snow;
+    width: 800;
+    left: 350px;
+    text-align: center;
+    font-family: verdana;
+    padding: 10;
+}
+
+p{ position: relative; 
+    top: 150px;
+    background-color: rgb(34, 34, 34);
+    color: snow;
+    font-family: Verdana;
+    text-align: center;
+    left: 260px;
+    width: 960;
+    display: block;
+    padding: 10;
+}
+
+#celesteending {
+    position: absolute;
+    max-width: 40%;
+    top: 390px;
+    left: 680px;
+    height: 400;
+}
+
+#celesteintro {
+    position: relative;
+    margin: auto;
+    top: 90px;
+    left: 3px;
+    font-family: verdana; 
+}
+
+#story1 {
+    position: relative;
+    margin: auto;
+    top: 90px;
+    left: 2px;
+    display: block;
+    font-family: verdana;
+    padding: 10;
+}
+
+#story2 {
+    position: relative;
+    margin: auto;
+    top: 200px;
+    left: 2px;
+    padding: 10;
+}
+
+#celeste {
+    position: relative;
+    top: 150px;
+    left: 585px;
+    max-width: 20%;
+    display: block;
+
+}
+
+#storyintro {    
+    position: relative;
+    top: 30px;
+    background-color: rgb(34, 34, 34);
+    color:snow;
+    width: 800;
+    left: 350px;
+    text-align: center;
+    font-family: verdana;
+    display: block;
+    padding: 10;
+
+}
+
+#madeline {
+    position: relative;
+    left: 185px;
+    top: 150;
+    max-width: 30%;
+    display: block;
+}
+
+#gametitle {
+    
+    position: relative;
+    top: 400px;
+    background-color: rgb(34, 34, 34);
+    color:snow;
+    width: 800;
+    left: 350px;
+    text-align: center;
+    font-family: verdana;
+    display: block;
+    padding: 10;
+}
+
+#gameplaysummary {
+    position: relative;
+    top: 600px;
+    background-color: rgb(34, 34, 34);
+    color:snow;
+    width: 800;
+    left: 350px;
+    text-align: center;
+    font-family: verdana;
+    display: block;
+    padding: 10;
+}
+
+#level1 {
+    position: relative;
+    top: 700px;
+    left: 800px;
+    max-width: 30%;
+    display: block;
+    height: 200px;
+}
+
+#level2 {
+    position: relative;
+    top: 500px;
+    left: 330px;
+    max-width: 30%;
+    display: block;
+    height: 200px;
+}
+
+#level3 {
+    position: relative;
+    top: 530px;
+    left: 800px;
+    max-width: 30%;
+    display: block;
+    height: 200px;
+    width: 368px;
+}
+
+#level4 {
+    position: relative;
+    top: 330px;
+    left: 330px;
+    max-width: 30%;
+    display: block;
+    height: 200px;
+
+}
+
+#conclusion {
+    text-align: center;
+    position: relative;
+    top: 410px;
+    background-color: rgb(34, 34, 34);
+    color:snow;
+    width: 800;
+    left: 350px;
+    text-align: center;
+    font-family: verdana;
+    display: block;
+    padding: 10;
+}
+
+
+.navbar {
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: rgb(33, 33, 33);
+    transition: 0.5 ease;
+    transform: translateX(-180px);
+}
+
+
+
+ul li {
+    list-style: none;
+    
+}
+
+ul li a {
+    color: snow;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+input {
+    display: none;
+    visibility: hidden;
+}
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    background-color:blue;
+    cursor: pointer;
+    border-radius: 2px;
+    top: 20;
+    left: 15px;
+    box-shadow: 0 0 10px black; 
+}
+.toggle .line{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top {
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .verse {
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked  ~ .toggle .top {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg)
+}
+
+input:checked  ~ .toggle .bottom {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .verse {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+input:checked ~ .navbar{
+    transform: translateX(0);
+}
+
+
+@media (max-width: 850px) {
+    p {
+        text-align: center;
+        font-size: 13px;
+        font-family: verdana;
+    
+    }
+
+    h1 {
+        color:rgb(0, 0, 0);
+        text-align: center;
+        font-family: verdana;
+        font-size: 17;
+    
+    
+    }
+    
+    h2 {
+        text-align: center;
+        font-family: verdana;
+        font-size: 15px;
+    
+    }
+
+    img {
+        display: block;
+        border: 4px solid;
+        max-width: 10%;
+        
+    }
+
+    nav {
+        max-width: 75%;
+        
+    }
+
+}
